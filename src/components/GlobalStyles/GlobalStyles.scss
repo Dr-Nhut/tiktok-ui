@@ -3,6 +3,7 @@
 
 :root {
     --primary: rgb(254, 44, 85);
+    --text-color: #333;
 }
 
 * {
@@ -20,4 +21,16 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }
