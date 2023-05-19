@@ -1,0 +1,2 @@
+* Thư mục này lưu trữ các thành phần không thay đổi trong website khi chuyển trang
+Vd: Header, Footer, SideBar
