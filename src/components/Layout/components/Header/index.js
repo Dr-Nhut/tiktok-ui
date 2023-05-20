@@ -3,13 +3,13 @@ import styles from './Header.module.scss';
 
 //components
 import { Wrapper as PopperWrapper } from '~/components/Popper';
-
+import Button from '~/components/Button';
 //Hooks
 import { useState, useEffect } from 'react';
 
 //font
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faCircleXmark, faSpinner } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faCircleXmark, faSpinner, faPlus } from '@fortawesome/free-solid-svg-icons'
 
 //images
 import images from '~/assets/images'
@@ -66,7 +66,11 @@ function Header() {
                 </Tippy>
 
                 <div className={cx('action')}>
-
+                    <Button text>
+                        <FontAwesomeIcon className={cx("upload-icon")} icon={faPlus} />
+                        Upload
+                    </Button>
+                    <Button primary>Log in</Button>
                 </div>
             </div>
         </header>
