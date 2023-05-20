@@ -4,12 +4,13 @@ import styles from './Header.module.scss';
 //components
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import Button from '~/components/Button';
+import Menu from '~/components/Popper/Menu';
 //Hooks
 import { useState, useEffect } from 'react';
 
 //font
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faCircleXmark, faSpinner, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faCircleXmark, faSpinner, faPlus, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons'
 
 //images
 import images from '~/assets/images'
@@ -71,6 +72,12 @@ function Header() {
                         Upload
                     </Button>
                     <Button primary>Log in</Button>
+
+                    <Menu>
+                        <button className={cx("more-btn")}>
+                            <FontAwesomeIcon icon={faEllipsisVertical} />
+                        </button>
+                    </Menu>
                 </div>
             </div>
         </header>

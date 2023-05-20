@@ -1,0 +1,25 @@
+.content {
+    width: 224px;
+    margin-left: 28px;
+}
+
+.menu-item-icon {
+    margin-right: 4px;
+}
+
+.content .menu-item-btn {
+    margin-left: 0;
+    padding: 8px;
+}
+
+.menu-wrapper {
+    padding-bottom: 8px;
+}
+
+.menu-item {
+    width: 100%;
+    text-align: left;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
